@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-image-container ">
+                    <div class="image-container">
+                        <img src="https://d48f7equ64qjl.cloudfront.net/static_files/testimonials/Background.jpg"
+                            alt="First slide" class="inside-carousel-image">
+                        <div class="carousel-caption-box">
+                            <p class="carousel-text">We are in our second year of working with ALL3D, and we are
+                                incredibly proud of the imagery that we are producing together. Our goal going into this
+                                partnership was to elevate our brand by creating photography that would visually
+                                represent who we are and honor and highlight the quality and artisanship of our products
+                                in realistic and accurate representations. Safe to say, ALL3D has delivered! Their
+                                easy-to-use portal and dedicated team of designers and modelers have created an
+                                intuitive and easy to use platform. All3D has allowed us to scale our imagery in a way
+                                that would not be financially nor physically possible with traditional lifestyle
+                                photography.</p>
+                            <p class="read-more-text" data-toggle="modal" data-target="#exampleModal">Read More <i
+                                    class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://d48f7equ64qjl.cloudfront.net/static_files/testimonials/Background-6.jpg"
+                            alt="First slide" class="inside-carousel-image">
+                        <div class="carousel-caption-box">
+                            <p class="carousel-text">We are in our second year of working with ALL3D, and we are
+                                incredibly proud of the imagery that we are producing together. Our goal going into this
+                                partnership was to elevate our brand by creating photography that would visually
+                                represent who we are and honor and highlight the quality and artisanship of our products
+                                in realistic and accurate representations. Safe to say, ALL3D has delivered! Their
+                                easy-to-use portal and dedicated team of designers and modelers have created an
+                                intuitive and easy to use platform. All3D has allowed us to scale our imagery in a way
+                                that would not be financially nor physically possible with traditional lifestyle
+                                photography.</p>
+                            <p class="read-more-text" data-toggle="modal" data-target="#exampleModal">Read More <i
+                                    class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></p>
+                        </div>
+
+                    </div>
+                    <div class="image-container">
+                        <img src="https://d48f7equ64qjl.cloudfront.net/static_files/testimonials/Background-4.jpg"
+                            alt="First slide" class="inside-carousel-image">
+                        <div class="carousel-caption-box">
+                            <p class="carousel-text">ALL3D has saved me tons of hours on making creative content on my
+                                own. As a valued partner in creating digital content, ALL3D has helped me take Nathan
+                                Anthony's product models and lifestyle imagery to another level. I have been able to
+                                also create NFT's and to diversify my company's social media content. Their platform is
+                                easy to learn and intuitive. With ALL3D, I am in control and all my virtual content in
+                                one place and only limited by my imagination.</p>
+                            <p class="read-more-text" data-toggle="modal" data-target="#exampleModal">Read More <i
+                                    class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="carousel-image-container ">
+                    <div class="image-container">
+                        <img class="d-block w-100"
+                            src="https://d48f7equ64qjl.cloudfront.net/static_files/testimonials/Background-3.jpg"
+                            alt="Second slide">
+                        <div class="carousel-caption-box">
+                            <p class="carousel-text">ALL3D has saved me tons of hours on making creative content on my
+                                own. As a valued partner in creating digital content, ALL3D has helped me take Nathan
+                                Anthony's product models and lifestyle imagery to another level. I have been able to
+                                also create NFT's and to diversify my company's social media content. Their platform is
+                                easy to learn and intuitive. With ALL3D, I am in control and all my virtual content in
+                                one place and only limited by my imagination.</p>
+                            <p class="read-more-text" data-toggle="modal" data-target="#exampleModal">Read More <i
+                                    class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img class="d-block w-100"
+                            src="https://d48f7equ64qjl.cloudfront.net/static_files/testimonials/Background-4.jpg"
+                            alt="Second slide">
+                        <div class="carousel-caption-box">
+                            <p class="carousel-text">ALL3D has saved me tons of hours on making creative content on my
+                                own. As a valued partner in creating digital content, ALL3D has helped me take Nathan
+                                Anthony's product models and lifestyle imagery to another level. I have been able to
+                                also create NFT's and to diversify my company's social media content. Their platform is
+                                easy to learn and intuitive. With ALL3D, I am in control and all my virtual content in
+                                one place and only limited by my imagination.</p>
+                            <p class="read-more-text" data-toggle="modal" data-target="#exampleModal">Read More <i
+                                    class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></p>
+                        </div>
+
+                    </div>
+                    <div class="image-container">
+                        <img src="https://d48f7equ64qjl.cloudfront.net/static_files/testimonials/Background.jpg"
+                            alt="First slide" class="inside-carousel-image">
+                        <div class="carousel-caption-box">
+                            <p class="carousel-text">ALL3D has saved me tons of hours on making creative content on my
+                                own. As a valued partner in creating digital content, ALL3D has helped me take Nathan
+                                Anthony's product models and lifestyle imagery to another level. I have been able to
+                                also create NFT's and to diversify my company's social media content. Their platform is
+                                easy to learn and intuitive. With ALL3D, I am in control and all my virtual content in
+                                one place and only limited by my imagination.</p>
+                            <p class="read-more-text" data-toggle="modal" data-target="#exampleModal">Read More <i
+                                    class="fa-solid fa-arrow-right" style="margin-left: 5px;"></i></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev button" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <button class="btn btn-primary">
+                <span aria-hidden="true"> <i class="fa-solid fa-arrow-left"></i></span>
+                <span class="sr-only">Previous</span>
+            </button>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <button class="btn btn-primary">
+                <span aria-hidden="true"> <i class="fa-solid fa-arrow-right"></i></span>
+                </span>
+                <span class="sr-only">Next</span>
+            </button>
+        </a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered slideInUp" role="document" style="max-width: 70%;">
+            <!-- Add 'slideInUp' animation class -->
+            <div class="modal-content" style="height: 320px;">
+                <div class="modal-header" style="border-bottom: none;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Modal body text goes here.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function () {
+            // Handle click event on Read More text
+            $(".read-more-text").click(function () {
+                // Open the modal
+                $("#exampleModal").modal("show");
+            });
+        });
+    </script>
+    <script src="index.js"></script>
+    <script>
+        $(document).ready(function () {
+            function rearrangeCarousel() {
+                var windowWidth = $(window).width();
+
+                if (windowWidth > 1200) {
+                    // For large screens (greater than 1200px), display three images per slide
+                    $('.carousel-item').each(function () {
+                        var $images = $(this).find('.image-container');
+                        if ($images.length > 3) {
+                            $images.slice(3).appendTo($(this).next('.carousel-item'));
+                        }
+                    });
+                } else if (windowWidth <= 1200 && windowWidth > 800) {
+                    // For medium-sized screens (1200px - 801px), display two images per slide
+                    $('.carousel-item').each(function () {
+                        var $images = $(this).find('.image-container');
+                        if ($images.length > 2) {
+                            $images.slice(2).appendTo($(this).next('.carousel-item'));
+                        }
+                    });
+                } else if (windowWidth <= 800 && windowWidth > 768) {
+                    // For small screens (800px - 769px), display one image per slide
+                    $('.carousel-item').each(function () {
+                        var $images = $(this).next('.carousel-item').find('.image-container');
+                        if ($images.length > 0) {
+                            $images.prependTo($(this));
+                        }
+                    });
+                } else {
+                    // For extra small screens (less than 768px), display one image per slide
+                    $('.carousel-item').each(function () {
+                        var $images = $(this).find('.image-container');
+                        if ($images.length > 1) {
+                            $images.slice(1).appendTo($(this).next('.carousel-item'));
+                        }
+                    });
+                }
+            }
+
+            // Run on page load and window resize
+            rearrangeCarousel();
+            $(window).resize(function () {
+                rearrangeCarousel();
+            });
+            // Run on window load (in case of cached state)
+            $(window).on('load', function () {
+                rearrangeCarousel();
+            });
+
+            // Run on window resize
+            $(window).resize(function () {
+                rearrangeCarousel();
+            });
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
