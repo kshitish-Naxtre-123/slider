@@ -129,6 +129,10 @@ button:active {
     }
 }
 
+.modal .modal-dialog{
+    max-width: 70%;
+}
+
 
 
 
@@ -208,9 +212,10 @@ button:active {
 
 /* Media query for screens between 480px and 600px */
 @media (max-width: 600px) and (min-width: 400px) {
-    .carousel{
+    .carousel {
         padding: 4rem;
     }
+
     .carousel-image-container {
         display: block;
     }
@@ -220,26 +225,38 @@ button:active {
         margin-bottom: 10px;
     }
 
-   
+
 
     .carousel-caption-box {
-        font-size: 14px; /* Adjust the font size as needed */
+        font-size: 14px;
+        /* Adjust the font size as needed */
         padding: 10px;
-        bottom: 10px; /* Adjust the position as needed */
-        left: 10px; /* Adjust the position as needed */
-        right: 10px; /* Adjust the position as needed */
+        bottom: 10px;
+        /* Adjust the position as needed */
+        left: 10px;
+        /* Adjust the position as needed */
+        right: 10px;
+        /* Adjust the position as needed */
     }
 
     .carousel-caption-box p {
-        font-size: 12px; /* Adjust the font size as needed */
+        font-size: 12px;
+        /* Adjust the font size as needed */
+    }
+
+    /* Center the modal */
+    .modal .modal-dialog {
+        max-width: 100%;
+        padding: 10px;
     }
 }
 
 
 @media (max-width: 1200px) and (min-width: 800px) {
-    .carousel{
+    .carousel {
         padding: 13rem;
     }
+
     .carousel-image-container {
         display: flex;
         justify-content: space-around;
@@ -251,14 +268,18 @@ button:active {
     }
 
     .carousel-caption-box {
-        font-size: 14px; /* Adjust the font size as needed */
+        font-size: 14px;
+        /* Adjust the font size as needed */
         padding: 15px;
-        bottom: 20px; /* Adjust the position as needed */
-        left: 15px; /* Adjust the position as needed */
+        bottom: 20px;
+        /* Adjust the position as needed */
+        left: 15px;
+        /* Adjust the position as needed */
         right: 30px;
     }
 
     .carousel-caption-box p {
-        font-size: 14px; /* Adjust the font size as needed */
+        font-size: 14px;
+        /* Adjust the font size as needed */
     }
 }
