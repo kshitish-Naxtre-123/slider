@@ -263,17 +263,27 @@
                             $(element).remove();
                         }
                     });
-
                 }
             }
-
-            // Run on page load and window resize
+    
+            function removeCarouselControls() {
+                if ($(window).width() <= 600 && $(window).width() >= 400) {
+                    $('.carousel-control-prev, .carousel-control-next').remove();
+                }
+            }
+    
+            // Run on page load
             rearrangeCarousel();
+            removeCarouselControls();
+    
+            // Run on window resize
             $(window).resize(function () {
                 rearrangeCarousel();
+                removeCarouselControls();
             });
         });
     </script>
+    
 
 
 

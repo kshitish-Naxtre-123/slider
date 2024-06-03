@@ -1,66 +1,58 @@
 .carousel {
-    padding: 10rem;
+  padding: 10rem;
 }
 
 .carousel-item img {
-    height: 550px;
-    object-fit: cover;
+  height: 550px;
+  object-fit: cover;
 }
 
 .carousel-image-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 .image-container {
-    position: relative;
-    width: 30%;
+  position: relative;
+  width: 30%;
 }
 
 .image-container img {
-    border-radius: 10px;
-
+  border-radius: 10px;
 }
 
 .inside-carousel-image {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .carousel-caption-box {
-    position: absolute;
-    bottom: 20px;
-    left: 11px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    right: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 11px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  right: 10px;
 }
 
 .carousel-caption-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    color: black;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
 }
 
 .carousel-caption-box p {
-    font-size: 16px;
-    text-align: left;
+  font-size: 16px;
+  text-align: left;
 }
 
 .carousel-caption-box button {
-    width: fit-content;
+  width: fit-content;
 }
-
-
-
-
-
-
-
 
 /* .carousel-caption-box {
     position: absolute;
@@ -77,209 +69,195 @@
     border-radius: 5px;
 } */
 
-
-
-
-
-
-
-
 button {
-    padding: 20px;
-    width: 55px;
-    height: 60px;
-    transition: all 0.3s ease;
-    /* Smooth transition for hover effect */
-    background-color: #007bff;
-    /* Button background color */
-    color: white;
-    /* Button text color */
-    border: none;
-    border-radius: 5px;
-    /* Rounded corners */
-    cursor: pointer;
+  padding: 20px;
+  width: 55px;
+  height: 60px;
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effect */
+  background-color: #007bff;
+  /* Button background color */
+  color: white;
+  /* Button text color */
+  border: none;
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
 }
-
-
 
 /* Hover effect */
 button:hover {
-    transform: scale(1.1);
-    /* Slightly increase the size */
-    background-color: #0056b3;
-    /* Darken the background color */
+  transform: scale(1.1);
+  /* Slightly increase the size */
+  background-color: #0056b3;
+  /* Darken the background color */
 }
 
 /* Click animation */
 button:active {
-    animation: clickEffect 0.2s ease;
+  animation: clickEffect 0.2s ease;
 }
 
 @keyframes clickEffect {
-    0% {
-        transform: scale(1.1);
-    }
+  0% {
+    transform: scale(1.1);
+  }
 
-    50% {
-        transform: scale(0.9);
-    }
+  50% {
+    transform: scale(0.9);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.modal .modal-dialog{
-    max-width: 70%;
+.modal .modal-dialog {
+  max-width: 70%;
 }
-
-
-
-
 
 /* modal scroll animation*/
 /* Smooth slide in from bottom to top */
 .slideInUp {
-    animation: slideInUp 0.5s forwards;
-    /* Animation duration */
-    transform-origin: 50% 100%;
-    /* Set transform origin to bottom */
+  animation: slideInUp 0.5s forwards;
+  /* Animation duration */
+  transform-origin: 50% 100%;
+  /* Set transform origin to bottom */
 }
 
 @keyframes slideInUp {
-    from {
-        transform: translateY(100%);
-        /* Start position */
-        opacity: 0;
-        /* Start opacity */
-    }
+  from {
+    transform: translateY(100%);
+    /* Start position */
+    opacity: 0;
+    /* Start opacity */
+  }
 
-    to {
-        transform: translateY(0%);
-        /* End position */
-        opacity: 1;
-        /* End opacity */
-    }
+  to {
+    transform: translateY(0%);
+    /* End position */
+    opacity: 1;
+    /* End opacity */
+  }
 }
 
 /* Optional: Smooth slide out to bottom */
 .slideOutDown {
-    animation: slideOutDown 0.5s forwards;
-    /* Animation duration */
+  animation: slideOutDown 0.5s forwards;
+  /* Animation duration */
 }
 
 @keyframes slideOutDown {
-    from {
-        transform: translateY(0%);
-        /* Start position */
-        opacity: 1;
-        /* Start opacity */
-    }
+  from {
+    transform: translateY(0%);
+    /* Start position */
+    opacity: 1;
+    /* Start opacity */
+  }
 
-    to {
-        transform: translateY(100%);
-        /* End position */
-        opacity: 0;
-        /* End opacity */
-    }
+  to {
+    transform: translateY(100%);
+    /* End position */
+    opacity: 0;
+    /* End opacity */
+  }
 }
 
 .read-more-text {
-    display: inline-block;
-    color: #17a2b8;
-    cursor: pointer;
-    font-weight: bold;
+  display: inline-block;
+  color: #17a2b8;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .read-more-text:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
-
-
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {
-    .carousel-image-container {
-        display: block;
-    }
+  .carousel-image-container {
+    display: block;
+  }
 
-    .image-container {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+  .image-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 /* Media query for screens between 480px and 600px */
 @media (max-width: 600px) and (min-width: 400px) {
-    .carousel {
-        padding: 4rem;
-    }
+  .carousel {
+    padding: 10rem 2rem;
+  }
 
-    .carousel-image-container {
-        display: block;
-    }
+  .carousel-image-container {
+    display: block;
+  }
 
-    .image-container {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+  .image-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
+  .carousel-caption-box {
+    font-size: 14px;
+    /* Adjust the font size as needed */
+    padding: 10px;
+    bottom: 10px;
+    /* Adjust the position as needed */
+    left: 10px;
+    /* Adjust the position as needed */
+    right: 10px;
+    /* Adjust the position as needed */
+  }
 
+  .carousel-caption-box p {
+    font-size: 12px;
+    /* Adjust the font size as needed */
+  }
 
-    .carousel-caption-box {
-        font-size: 14px;
-        /* Adjust the font size as needed */
-        padding: 10px;
-        bottom: 10px;
-        /* Adjust the position as needed */
-        left: 10px;
-        /* Adjust the position as needed */
-        right: 10px;
-        /* Adjust the position as needed */
-    }
+  /* Center the modal */
+  .modal .modal-dialog {
+    max-width: 100%;
+    padding: 10px;
+  }
 
-    .carousel-caption-box p {
-        font-size: 12px;
-        /* Adjust the font size as needed */
-    }
-
-    /* Center the modal */
-    .modal .modal-dialog {
-        max-width: 100%;
-        padding: 10px;
-    }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
 }
 
-
 @media (max-width: 1200px) and (min-width: 800px) {
-    .carousel {
-        padding: 13rem;
-    }
+  .carousel {
+    padding: 13rem;
+  }
 
-    .carousel-image-container {
-        display: flex;
-        justify-content: space-around;
-        gap: 20px;
-    }
+  .carousel-image-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
 
-    .image-container {
-        width: 45%;
-    }
+  .image-container {
+    width: 45%;
+  }
 
-    .carousel-caption-box {
-        font-size: 14px;
-        /* Adjust the font size as needed */
-        padding: 15px;
-        bottom: 20px;
-        /* Adjust the position as needed */
-        left: 15px;
-        /* Adjust the position as needed */
-        right: 30px;
-    }
+  .carousel-caption-box {
+    font-size: 14px;
+    /* Adjust the font size as needed */
+    padding: 15px;
+    bottom: 20px;
+    /* Adjust the position as needed */
+    left: 15px;
+    /* Adjust the position as needed */
+    right: 30px;
+  }
 
-    .carousel-caption-box p {
-        font-size: 14px;
-        /* Adjust the font size as needed */
-    }
+  .carousel-caption-box p {
+    font-size: 14px;
+    /* Adjust the font size as needed */
+  }
 }
