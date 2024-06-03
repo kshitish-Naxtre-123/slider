@@ -250,6 +250,10 @@
     <script src="index.js"></script>
  <script>
     $(document).ready(function () {
+          // Set the interval to 3000 milliseconds (3 seconds)
+          $('#carouselExampleIndicators').carousel({
+            interval: 3000
+        });
         function rearrangeCarousel() {
             if ($(window).width() <= 768) {
                 // Rearrange slides for mobile
