@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+
 
 
 </head>
@@ -199,6 +201,8 @@
 
             </div>
         </div>
+
+
         <a class="carousel-control-prev button" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <button class="btn btn-primary">
                 <span aria-hidden="true"> <i class="fa-solid fa-arrow-left"></i></span>
@@ -244,45 +248,62 @@
         });
     </script>
     <script src="index.js"></script>
-    <script>
-        $(document).ready(function () {
-            function rearrangeCarousel() {
-                if ($(window).width() <= 768) {
-                    // Rearrange slides for mobile
-                    $('.carousel-inner .carousel-item').each(function (index, element) {
-                        let $images = $(element).find('.image-container');
-                        if ($images.length > 1) {
-                            $images.each(function () {
-                                let $newItem = $('<div class="carousel-item"></div>');
-                                if (index === 0 && $(this).is(':first-child')) {
-                                    $newItem.addClass('active');
-                                }
-                                $newItem.append($(this).clone());
-                                $('.carousel-inner').append($newItem);
-                            });
-                            $(element).remove();
-                        }
-                    });
-                }
+ <script>
+    $(document).ready(function () {
+        function rearrangeCarousel() {
+            if ($(window).width() <= 768) {
+                // Rearrange slides for mobile
+                $('.carousel-inner .carousel-item').each(function (index, element) {
+                    let $images = $(element).find('.image-container');
+                    if ($images.length > 1) {
+                        $images.each(function () {
+                            let $newItem = $('<div class="carousel-item"></div>');
+                            if (index === 0 && $(this).is(':first-child')) {
+                                $newItem.addClass('active');
+                            }
+                            $newItem.append($(this).clone());
+                            $('.carousel-inner').append($newItem);
+                        });
+                        $(element).remove();
+                    }
+                });
             }
-    
-            function removeCarouselControls() {
-                if ($(window).width() <= 600 && $(window).width() >= 400) {
-                    $('.carousel-control-prev, .carousel-control-next').remove();
-                }
+        }
+
+        function removeCarouselControls() {
+            if ($(window).width() <= 600 && $(window).width() >= 400) {
+                $('.carousel-control-prev, .carousel-control-next').remove();
             }
-    
-            // Run on page load
+        }
+
+        function enableSwipe() {
+            if ($(window).width() <= 600) {
+                $("#carouselExampleIndicators").swipe({
+                    swipeLeft: function () {
+                        $(this).carousel('next');
+                    },
+                    swipeRight: function () {
+                        $(this).carousel('prev');
+                    },
+                    threshold: 0
+                });
+            }
+        }
+
+        // Run on page load
+        rearrangeCarousel();
+        removeCarouselControls();
+        enableSwipe();
+
+        // Run on window resize
+        $(window).resize(function () {
             rearrangeCarousel();
             removeCarouselControls();
-    
-            // Run on window resize
-            $(window).resize(function () {
-                rearrangeCarousel();
-                removeCarouselControls();
-            });
+            enableSwipe();
         });
-    </script>
+    });
+</script>
+
     
 
 
